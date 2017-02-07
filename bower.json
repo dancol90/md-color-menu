@@ -2,7 +2,8 @@
   "name": "md-color-menu",
   "version": "0.1.6",
   "authors": [
-    "Sebastian Henneberg <sebastian.henneberg@onelogic.de>"
+    "Sebastian Henneberg <sebastian.henneberg@onelogic.de>",
+    "Daniele Colanardi"
   ],
   "description": "Simple Angular Material Color Picker",
   "main": [
@@ -16,7 +17,7 @@
     "Color Picker"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/ONE-LOGIC/md-color-menu",
+  "homepage": "https://github.com/dancol90/md-color-menu",
   "ignore": [
     "bower_components"
   ],

@@ -72,6 +72,7 @@
       controllerAs: 'vm',
       bindToController: {
         color: '=',
+        hex: '=',
         showTooltips: '=?'
       },
       template: [
@@ -93,7 +94,7 @@
     }
   }
 
-  function mdColorMenuController(mdPickerColors) {
+  function mdColorMenuController($scope, mdPickerColors) {
     var vm = this;
 
     vm.showTooltips = vm.showTooltips || false;
@@ -107,7 +108,13 @@
 
     function selectColor(color) {
       vm.color = color;
+      vm.hex = color.hex;
     }
+
+    $scope.$watch('vm.hex', function(value) {
+      if (value)
+        vm.color = mdPickerColors.getColor(value);
+    });
   }
 
 })();
